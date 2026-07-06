@@ -44,9 +44,3 @@ class BookScraper:
         
     
 
-scraper = BookScraper()
-
-books = scraper.scrape_all_pages()
-
-print(len(books))
-    

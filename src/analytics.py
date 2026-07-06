@@ -1,4 +1,4 @@
-class BookAnalytics:
+class DataAnalyzer:
     
 
     def __init__(self, book_data):

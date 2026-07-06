@@ -6,6 +6,7 @@ class DataTransformer:
         clean_books = []
         for book in data:
             clean_book = {}
+            clean_book['title'] = book['title'].strip()
             clean_book['price'] = float(re.sub(r'[^\d.]', '', book['price']))
             clean_book['availability'] = "In stock" in book['availability']
             clean_books.append(clean_book)
