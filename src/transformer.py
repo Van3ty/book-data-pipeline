@@ -10,3 +10,4 @@ class DataTransformer:
             clean_book['availability'] = "In stock" in book['availability']
             clean_books.append(clean_book)
         return clean_books
+    

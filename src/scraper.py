@@ -35,7 +35,7 @@ class BookScraper:
     
 
     def scrape_all_books(self):
-        for page in range(1, 51):  # Assuming there are 50 pages
+        for page in range(1, 51): 
             url = f"{self.base_url}catalogue/page-{page}.html"
             response = self.fetch_page(url)
             books = self.parse_page(response)
@@ -49,4 +49,4 @@ scraper = BookScraper()
 books = scraper.scrape_all_pages()
 
 print(len(books))
-        
+    
